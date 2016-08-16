@@ -85,12 +85,13 @@ public class FruitListAdapter extends BaseAdapter {
                         holder.textView = (TextView) view.findViewById(R.id.textSeparator);
                         break;
                 }
+                view.setTag(holder);
             } else {
                 holder = (ViewHolder) view.getTag();
             }
 
             holder.textView.setText(mData.get(i));
-        } catch (Exception e ){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 

@@ -73,19 +73,6 @@ public class MainActivity extends ListActivity implements MainViewInterface {
         }
 
 
-//        for(int i = 0; i < mappedFruit.size(); i++){
-//            mappedFruit.get(i).contains(mappedFruit.get(i));
-//        }
-
-//        int mappedFruitSize = keyOfFruit.size();
-//        int keys = keyOfFruit.size();
-
-//        for (int i = 0; i < mappedFruitSize; i++) {
-//
-//            keyOfFruit.add(keyOfFruit.toArray()[i].toString() + "," + keyOfFruit.toArray()[keys - 1].toString());
-//            keys = keyOfFruit.size();
-//        }
-
         for (Map.Entry<String, List<Fruit>> listFruit : mappedFruit.entrySet()) {
             List<Fruit> newFruit = listFruit.getValue();
 
@@ -143,11 +130,8 @@ public class MainActivity extends ListActivity implements MainViewInterface {
             fruitAdapter.addSectionHeaderItem(iterateToView.getKey());
             List<Fruit> listIsi = iterateToView.getValue();
 
-            for(int i = 0; i < listIsi.size(); i++){
-//                if(i == 0){
-//                    fruitAdapter.addSectionHeaderItem(iterateToView.getKey());
-//                }
-                fruitAdapter.addItem(listIsi.get(i).getName());
+            for( Fruit isi : listIsi){
+                fruitAdapter.addItem(isi.getName().toString());
             }
         }
 
