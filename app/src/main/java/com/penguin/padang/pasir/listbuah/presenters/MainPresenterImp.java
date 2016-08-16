@@ -81,7 +81,6 @@ public class MainPresenterImp implements MainPresenterInterface {
                 view.getDialog().dismiss();
                 try {
                     fruits = new Fruits();
-                    System.out.println(fruits);
                     fruits.setFruit(response.body());
                     view.showData(fruits);
                 } catch (Exception e){

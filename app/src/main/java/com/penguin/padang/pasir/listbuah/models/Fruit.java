@@ -55,4 +55,25 @@ public class Fruit implements Comparable<Fruit>{
     public void setCategory(String category) {
         this.category = category;
     }
+
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (o == null || getClass() != o.getClass()) return false;
+//
+//        Fruit fruit = (Fruit) o;
+//
+//        return name.equals(fruit.name);
+//
+//    }
+
+//    @Override
+//    public int hashCode() {
+//        return name.hashCode();
+//    }
+
+//    @Override
+//    public String toString() {
+//        return name ;
+//    }
 }
